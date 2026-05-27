@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetria Agrícola e Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Eco<span>AgroTech</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#como-funciona">1. Como Funciona</a></li>
+                    <li><a href="#maquinas">2. Máquinas Conectadas</a></li>
+                    <li><a href="#reducao-co2">3. Redução de CO₂</a></li>
+                    <li><a href="#telemetria-ao-vivo">4. Painel Realtime</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- TÓPICO 1: COMO FUNCIONA -->
+        <section id="como-funciona" class="section-padding content-section">
+            <div class="container">
+                <span class="topic-number">Tópico 01</span>
+                <h2>Como Funciona a Telemetria no Campo?</h2>
+                <p>A telemetria agrícola utiliza sensores IoT (Internet das Coisas) instalados diretamente no sistema de injeção e nos motores das máquinas. Esses sensores capturam dados brutos sobre o comportamento do motor e os transmitem instantaneamente via redes de internet celular ou satital para uma plataforma em nuvem.</p>
+                <p>Ao monitorar o fluxo de diesel por segundo, o gestor da fazenda consegue identificar gargalos operacionais e desperdícios no exato momento em que acontecem.</p>
+            </div>
+        </section>
+
+        <!-- TÓPICO 2: MÁQUINAS CONECTADAS -->
+        <section id="maquinas" class="section-padding bg-alt">
+            <div class="container">
+                <span class="topic-number">Tópico 02</span>
+                <h2>Tratores e Colheitadeiras Inteligentes</h2>
+                <p class="section-desc">Cada tipo de maquinário exige uma análise específica devido ao seu padrão de trabalho na lavoura.</p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Tratores</h3>
+                        <p>O foco principal está no controle de tração, patinagem e taxas de aceleração durante o preparo do solo e plantio, evitando rotações desnecessárias que disparam o consumo de combustível.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Colheitadeiras</h3>
+                        <p>O monitoramento foca na velocidade de trilha e alimentação do grão. Ajustar o motor da colheitadeira dinamicamente conforme a densidade da cultura reduz drasticamente o esforço e a queima de diesel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÓPICO 3: REDUÇÃO DE CO2 -->
+        <section id="reducao-co2" class="section-padding content-section">
+            <div class="container">
+                <span class="topic-number">Tópico 03</span>
+                <h2>O Impacto Direto na Redução de CO₂</h2>
+                <p>A queima de 1 litro de óleo diesel comercial libera cerca de 2,6 kg de CO₂ (gás carbônico) na atmosfera. Quando a telemetria identifica uma máquina operando em modo ocioso (motor ligado com o veículo parado), o sistema emite um alerta imediato.</p>
+                <div class="stats-box">
+                    <div class="stat-item">
+                        <strong>Otimização de Rotas</strong>
+                        <p>Menos quilômetros rodados para cobrir a mesma área da lavoura.</p>
+                    </div>
+                    <div class="stat-item">
+                        <strong>Manutenção Preditiva</strong>
+                        <p>Motores desregulados queimam mais combustível; os alertas de falha evitam o problema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÓPICO 4: TELEMETRIA AO VIVO -->
+        <section id="telemetria-ao-vivo" class="section-padding bg-alt text-center">
+            <div class="container">
+                <span class="topic-number">Tópico 04</span>
+                <h2>Painel de Transmissão em Tempo Real</h2>
+                <p class="section-desc">Simulação de dados enviados via nuvem diretamente das frentes de operação.</p>
+                
+                <div class="dashboard">
+                    <div class="dash-box">
+                        <h3>Trator John Deere 7J</h3>
+                        <p class="label">Consumo de Combustível</p>
+                        <div class="value blue" id="trator-combustivel">22.4 L/h</div>
+                    </div>
+                    <div class="dash-box">
+                        <h3>Colheitadeira Case IH</h3>
+                        <p class="label">Consumo de Combustível</p>
+                        <div class="value blue" id="colheitadeira-combustivel">45.1 L/h</div>
+                    </div>
+                    <div class="dash-box highlight">
+                        <h3>Carbono Evitado (Hoje)</h3>
+                        <p class="label">Total de Emissões Reduzidas</p>
+                        <div class="value green" id="co2-economizado">184.2 kg</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 EcoAgroTech — Monitoramento Inteligente para uma Agricultura de Baixo Carbono.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
